@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mammuthus"
+version = "0.0.1"
+description = "Agentic AI for non-life (P&C) insurance pricing."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "David Fischer", email = "fischerdm1@outlook.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mammuthus"]
