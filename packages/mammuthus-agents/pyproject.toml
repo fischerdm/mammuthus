@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mammuthus-agents"
+version = "0.0.1"
+description = "Agentic components for non-life (P&C) insurance pricing, built on mammuthus tools."
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "David Fischer", email = "fischerdm1@outlook.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+# 'mammuthus' is a PEP 420 namespace package: src/mammuthus/ has no __init__.py.
+[tool.hatch.build.targets.wheel]
+core-metadata-version = "2.4"
+packages = ["src/mammuthus"]
+
+[tool.hatch.build.targets.sdist]
+core-metadata-version = "2.4"
