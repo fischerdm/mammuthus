@@ -2,11 +2,14 @@
 
 Agentic AI for non-life (P&C) insurance pricing.
 
-This package is at an early stage. It is organized into three areas:
+This project is at an early stage. `mammuthus` is a meta-package that installs
+the following components, which share the `mammuthus` namespace:
 
-- `mammuthus.tools` — building-block utilities used by agents.
-- `mammuthus.agents` — agentic components built on top of tools.
-- `mammuthus.products` — end-to-end products assembled from agents and tools.
+| PyPI package       | Import as          | Purpose                                        |
+| ------------------ | ------------------ | ---------------------------------------------- |
+| `mammuthus-tools`  | `mammuthus.tools`  | Building-block utilities used by agents.       |
+| `mammuthus-agents` | `mammuthus.agents` | Agentic components built on top of tools.      |
+| `mammuthus-mcp`    | `mammuthus.mcp`    | MCP server exposing mammuthus tools and agents. |
 
 ## Installation
 
